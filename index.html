@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support Ticket Tracker</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Support Ticket Tracker</h1>
+    <form id="ticket-form">
+      <input type="text" id="ticket-title" placeholder="Ticket Title" required>
+      <textarea id="ticket-description" placeholder="Ticket Description" required></textarea>
+      <button type="submit">Add Ticket</button>
+    </form>
+    <div>
+      <label for="filter">Filter:</label>
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="open">Open</option>
+        <option value="resolved">Resolved</option>
+      </select>
+    </div>
+    <ul id="ticket-list"></ul>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
